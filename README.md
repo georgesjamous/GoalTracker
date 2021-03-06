@@ -31,7 +31,7 @@ Libraries
 <br>
 
 Code Hints
-  I usually dont advocate extensive commenting. Howver on this occasion i over explained my intentions in some areas. 
+  I usually dont advocate extensive commenting. However on this occasion i over explained my intentions in some areas. 
   You can find these areas by searching for the string `Note:` in the code.
 
 <br>
