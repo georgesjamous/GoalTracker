@@ -44,4 +44,8 @@ Code Todos:
 Project: 
   Please use the Workspace to launch the application
 
+---
+
+- [Side Note](https://github.com/georgesjamous/GoalTracker/blob/master/README.SIDENOTE.md)
+
 
