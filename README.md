@@ -9,7 +9,7 @@ _Project was completed in under 3 days to adhere to the maximum time limit (abou
 Before jumping into the code, allow me to guide you through the project so that you can understand it quicker.
 Please go through the points below one by one, top to bottom.
 
---
+<br>
 
 Discussion
 
@@ -20,17 +20,29 @@ Discussion
 - [Code Quality](https://github.com/georgesjamous/GoalTracker/blob/main/README.CODE.md)
 - [Logging] _none implemented_
 
+<br>
+
 Libraries
 - [CoreDataStack](https://github.com/georgesjamous/GoalTracker/blob/main/CoreDataStack)
 - [ApiService](https://github.com/georgesjamous/GoalTracker/blob/main/ApiCall)
 - [HealthDataProviders](https://github.com/georgesjamous/GoalTracker/blob/main/HealthDataProvider)
 - [UserGoalService](https://github.com/georgesjamous/GoalTracker/blob/main/UserGoalsService)
 
+<br>
+
 Code Hints
-I usually dont advocate extensive commenting. Howver on this occasion i over explained my interntion in some areas. You can find these areas by searching fot the string `Note:`.
+  I usually dont advocate extensive commenting. Howver on this occasion i over explained my intentions in some areas. 
+  You can find these areas by searching for the string `Note:` in the code.
 
-Code Todos: marked with `todo`
+<br>
 
-Project: Please use the Workspace to launch the application
+Code Todos: 
+  marked with `todo`. Usually we replace those with `#warning` to keep us from forgetting.
+  Some people like to use SonarQuebe to break when it finds totdos, i dont like that.
+
+<br>
+
+Project: 
+  Please use the Workspace to launch the application
 
 
