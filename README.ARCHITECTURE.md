@@ -12,26 +12,26 @@ _The key is that we should always interact with the Storage, as our source of tu
 #### Domain
 The Domain is where the Data is managed and the logic lives. It is splitted into 4 Parts. Services, Repositories, Persistence, Data Stack.
 
-- CoreData Stack [CD]
-      
-     Is the warpper around CoreData. I am using one core data stack, but maybe this app could benefit from multiple stacks in the future for additional    functionalities.
-
-- Services [S]
-
-     Services is mostly where the logic lies. However they are stateless and only responsible to fetch data from the Repository and store it in the Persistence.
-     It is also responsible to build (or proxy the build of) things to be used by external consumers.
-     Services can be split into multiple interfaces and files. In this app i am using one file.
-
 - Repositories [R]
 
      They are responsible to communicate with the external data providers to fetch data into the app. 
      For example HealthKit, GoogleFi, Api Server...
      This is the extent of their responsiblity. Fetch data, retrurn it to Service.
+     
+- Services [S]
 
+     Services is mostly where the logic lies. However they are stateless and only responsible to fetch data from the Repository and store it in the Persistence.
+     It is also responsible to build (or proxy the build of) things to be used by external consumers.
+     Services can be split into multiple interfaces and files. In this app i am using one file.
+     
 - Persistence [P]
      
      This is the layer that is responsible to Persist the data. It communicates with the CoreDataStack to Save/Encode, then Fetch/Decode the data.
      It can also contain some logic around storing the data.
+     
+- CoreData Stack [CD]
+      
+     Is the warpper around CoreData. I am using one core data stack, but maybe this app could benefit from multiple stacks in the future for additional    functionalities.
 
 - Fetch Controllers [F]
 
