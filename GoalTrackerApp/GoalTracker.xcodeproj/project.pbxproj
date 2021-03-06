@@ -1,0 +1,1466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0001FB9325EFCF1400BAEED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FB9225EFCF1400BAEED8 /* AppDelegate.swift */; };
+		0001FB9525EFCF1400BAEED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FB9425EFCF1400BAEED8 /* SceneDelegate.swift */; };
+		0001FB9725EFCF1400BAEED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FB9625EFCF1400BAEED8 /* ViewController.swift */; };
+		0001FB9A25EFCF1400BAEED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001FB9825EFCF1400BAEED8 /* Main.storyboard */; };
+		0001FB9C25EFCF1600BAEED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0001FB9B25EFCF1600BAEED8 /* Assets.xcassets */; };
+		0001FB9F25EFCF1600BAEED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001FB9D25EFCF1600BAEED8 /* LaunchScreen.storyboard */; };
+		0001FBAA25EFCF1600BAEED8 /* GoalTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBA925EFCF1600BAEED8 /* GoalTrackerTests.swift */; };
+		0001FBB525EFCF1600BAEED8 /* GoalTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBB425EFCF1600BAEED8 /* GoalTrackerUITests.swift */; };
+		0001FBD525EFE61B00BAEED8 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBD425EFE61B00BAEED8 /* Goal.swift */; };
+		0001FBE225EFE69600BAEED8 /* StepCountGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBE125EFE69600BAEED8 /* StepCountGoal.swift */; };
+		0001FBE725EFE6BD00BAEED8 /* WalkingDistanceGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBE625EFE6BD00BAEED8 /* WalkingDistanceGoal.swift */; };
+		0001FBF225EFE74000BAEED8 /* RunningDistanceGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBF125EFE74000BAEED8 /* RunningDistanceGoal.swift */; };
+		0001FBF925EFE7DC00BAEED8 /* HealthDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FBF825EFE7DC00BAEED8 /* HealthDataService.swift */; };
+		0001FC0225EFE7ED00BAEED8 /* HealthDataProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 0001FC0125EFE7ED00BAEED8 /* HealthDataProvider */; };
+		0001FC1F25EFFDDC00BAEED8 /* UserGoalsService in Frameworks */ = {isa = PBXBuildFile; productRef = 0001FC1E25EFFDDC00BAEED8 /* UserGoalsService */; };
+		009F525025F00B20003035EF /* UserGoalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F524F25F00B20003035EF /* UserGoalsRepository.swift */; };
+		009F526125F01391003035EF /* UserGoalObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F526025F01391003035EF /* UserGoalObjectEncoder.swift */; };
+		009F527525F021CC003035EF /* UserGoalPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F527425F021CC003035EF /* UserGoalPersisting.swift */; };
+		009F528225F02346003035EF /* UserGoalCoreDataPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F528125F02346003035EF /* UserGoalCoreDataPersisting.swift */; };
+		009F529E25F0363A003035EF /* CoreDataStack in Frameworks */ = {isa = PBXBuildFile; productRef = 009F529D25F0363A003035EF /* CoreDataStack */; };
+		009F52A625F036DD003035EF /* UserGoalCoreDataPersistingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52A525F036DD003035EF /* UserGoalCoreDataPersistingStack.swift */; };
+		009F52AE25F0D3B4003035EF /* UserGoalCoreDataPersistingStackTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52AD25F0D3B4003035EF /* UserGoalCoreDataPersistingStackTransforms.swift */; };
+		009F52C425F0E80F003035EF /* UserGoalCoreDataFetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52C325F0E80F003035EF /* UserGoalCoreDataFetchController.swift */; };
+		009F52CD25F0EBB7003035EF /* KeyPath+StringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52CC25F0EBB7003035EF /* KeyPath+StringValue.swift */; };
+		009F52E525F0F6C6003035EF /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52DC25F0F6C6003035EF /* BaseWireframe.swift */; };
+		009F52E625F0F6C6003035EF /* UIStoryboard+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52DD25F0F6C6003035EF /* UIStoryboard+Init.swift */; };
+		009F52E725F0F6C6003035EF /* UIViewController+Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52DE25F0F6C6003035EF /* UIViewController+Wireframe.swift */; };
+		009F52E825F0F6C6003035EF /* UINavigationController+Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52DF25F0F6C6003035EF /* UINavigationController+Wireframe.swift */; };
+		009F52E925F0F6C6003035EF /* WireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52E125F0F6C6003035EF /* WireframeProtocol.swift */; };
+		009F52EA25F0F6C6003035EF /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52E225F0F6C6003035EF /* ViewProtocol.swift */; };
+		009F52EB25F0F6C6003035EF /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52E325F0F6C6003035EF /* PresenterProtocol.swift */; };
+		009F52EC25F0F6C6003035EF /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52E425F0F6C6003035EF /* InteractorProtocol.swift */; };
+		009F52F525F0F6FE003035EF /* MyGoalsScreenInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52F025F0F6FE003035EF /* MyGoalsScreenInterfaces.swift */; };
+		009F52F625F0F6FE003035EF /* MyGoalsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52F125F0F6FE003035EF /* MyGoalsScreenPresenter.swift */; };
+		009F52F725F0F6FE003035EF /* MyGoalsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52F225F0F6FE003035EF /* MyGoalsScreenViewController.swift */; };
+		009F52F825F0F6FE003035EF /* MyGoalsScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52F325F0F6FE003035EF /* MyGoalsScreenInteractor.swift */; };
+		009F52F925F0F6FE003035EF /* MyGoalsScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52F425F0F6FE003035EF /* MyGoalsScreenWireframe.swift */; };
+		009F52FF25F0FBDD003035EF /* UserGoalsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52FE25F0FBDD003035EF /* UserGoalsService.swift */; };
+		009F530525F10247003035EF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 009F530425F10247003035EF /* Swinject */; };
+		009F530B25F10264003035EF /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F530A25F10264003035EF /* Application.swift */; };
+		009F531125F102A4003035EF /* Application+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F531025F102A4003035EF /* Application+DI.swift */; };
+		009F531A25F119EB003035EF /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F531925F119EB003035EF /* World.swift */; };
+		009F532525F11A20003035EF /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F532425F11A20003035EF /* Device.swift */; };
+		009F533825F11E0F003035EF /* UserGoalsServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F533725F11E0F003035EF /* UserGoalsServiceProtocols.swift */; };
+		009F533E25F12671003035EF /* MyGoalsScreenGoalCellSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F533D25F12671003035EF /* MyGoalsScreenGoalCellSwiftUI.swift */; };
+		009F534425F126EA003035EF /* Progress-Bar in Frameworks */ = {isa = PBXBuildFile; productRef = 009F534325F126EA003035EF /* Progress-Bar */; };
+		009F534A25F12882003035EF /* CircularProgressSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F534925F12882003035EF /* CircularProgressSwiftUI.swift */; };
+		009F535225F12BBE003035EF /* ClosedRange+Clamping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F535125F12BBE003035EF /* ClosedRange+Clamping.swift */; };
+		009F535A25F12DED003035EF /* UIView+Embedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F535925F12DED003035EF /* UIView+Embedding.swift */; };
+		009F536025F12E54003035EF /* MyGoalsScreenGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F535F25F12E54003035EF /* MyGoalsScreenGoalCell.swift */; };
+		009F536825F12EC2003035EF /* SwiftUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F536725F12EC2003035EF /* SwiftUITableCell.swift */; };
+		009F536D25F13102003035EF /* UITableViewCell+Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F536C25F13102003035EF /* UITableViewCell+Identity.swift */; };
+		009F537225F13159003035EF /* UITableView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F537125F13159003035EF /* UITableView+Cell.swift */; };
+		009F538F25F1385B003035EF /* MyGoalsScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F538E25F1385B003035EF /* MyGoalsScreenModels.swift */; };
+		009F539425F13DF8003035EF /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F539325F13DF8003035EF /* DomainError.swift */; };
+		009F539C25F1434E003035EF /* ErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F539B25F1434E003035EF /* ErrorAlertView.swift */; };
+		009F53A125F14491003035EF /* UIViewController+ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53A025F14491003035EF /* UIViewController+ErrorHandler.swift */; };
+		009F53A625F1485A003035EF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53A525F1485A003035EF /* AppConstants.swift */; };
+		009F53B425F14996003035EF /* UserGoalsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53B325F14996003035EF /* UserGoalsApiService.swift */; };
+		009F53BC25F14DAC003035EF /* Publisher+AssignNoRetain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53BB25F14DAC003035EF /* Publisher+AssignNoRetain.swift */; };
+		009F53E025F1561C003035EF /* SwiftUICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53DF25F1561C003035EF /* SwiftUICollectionCell.swift */; };
+		009F53F425F15CCA003035EF /* HealthDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53F325F15CCA003035EF /* HealthDataRepository.swift */; };
+		009F53FE25F167EB003035EF /* GoalProgressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F53FD25F167EB003035EF /* GoalProgressService.swift */; };
+		009F541625F16BA0003035EF /* HealthDataPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F541525F16BA0003035EF /* HealthDataPersisting.swift */; };
+		009F541C25F16C68003035EF /* CoreDataHealthPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F541B25F16C68003035EF /* CoreDataHealthPersisting.swift */; };
+		009F542125F16E02003035EF /* HealthCoreDataPersistingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F542025F16E02003035EF /* HealthCoreDataPersistingStack.swift */; };
+		009F542625F16E96003035EF /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F542525F16E96003035EF /* HealthRecord.swift */; };
+		009F542B25F16ED5003035EF /* HealthCoreDataPersistingStackTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F542A25F16ED5003035EF /* HealthCoreDataPersistingStackTransforms.swift */; };
+		009F543025F174BF003035EF /* HealthCoreDataFetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F542F25F174BF003035EF /* HealthCoreDataFetchController.swift */; };
+		009F543825F17659003035EF /* Date+Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F543725F17659003035EF /* Date+Manipulation.swift */; };
+		009F543D25F180C6003035EF /* HealthDataServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F543C25F180C6003035EF /* HealthDataServiceProtocols.swift */; };
+		009F544F25F18468003035EF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F544E25F18468003035EF /* HealthKit.framework */; };
+		009F545525F184F9003035EF /* HealthKitPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F545425F184F9003035EF /* HealthKitPermissions.swift */; };
+		009F546025F221AE003035EF /* AppleHealthDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F545F25F221AE003035EF /* AppleHealthDataProviderTests.swift */; };
+		009F547225F23196003035EF /* DateManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F547125F23196003035EF /* DateManipulationTests.swift */; };
+		009F548325F24833003035EF /* GoalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F548225F24833003035EF /* GoalProgress.swift */; };
+		009F548D25F24B8A003035EF /* ProgressEvaluating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F548C25F24B8A003035EF /* ProgressEvaluating.swift */; };
+		009F549525F24BCA003035EF /* StepCountProgressEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F549425F24BCA003035EF /* StepCountProgressEvaluator.swift */; };
+		009F549E25F24C31003035EF /* StepCountProgressEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F549D25F24C31003035EF /* StepCountProgressEvaluatorTests.swift */; };
+		009F54A925F24F0D003035EF /* WalkedDistanceProgressEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54A825F24F0D003035EF /* WalkedDistanceProgressEvaluator.swift */; };
+		009F54B125F24F38003035EF /* RanDistanceProgressEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54B025F24F38003035EF /* RanDistanceProgressEvaluator.swift */; };
+		009F54B625F24F7B003035EF /* WalkedDistanceProgressEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54B525F24F7B003035EF /* WalkedDistanceProgressEvaluatorTests.swift */; };
+		009F54CA25F25009003035EF /* RanDistanceProgressEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54C925F25009003035EF /* RanDistanceProgressEvaluatorTests.swift */; };
+		009F54D425F250F9003035EF /* RewardGenerating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54D325F250F9003035EF /* RewardGenerating.swift */; };
+		009F54DC25F25219003035EF /* GoalReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54DB25F25219003035EF /* GoalReward.swift */; };
+		009F54E125F25305003035EF /* RewardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54E025F25305003035EF /* RewardGenerator.swift */; };
+		009F54ED25F25331003035EF /* RewardGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54EC25F25331003035EF /* RewardGeneratorTests.swift */; };
+		009F54F225F255F2003035EF /* GoalProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F54F125F255F2003035EF /* GoalProgressTracker.swift */; };
+		00C90F6F25F36B7900B4140C /* MainModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F6A25F36B7900B4140C /* MainModel.xcdatamodeld */; };
+		00C90F7225F36B7900B4140C /* MainCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F6E25F36B7900B4140C /* MainCoreDataStack.swift */; };
+		00C90F8325F36EC000B4140C /* GoalProgressPersistingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F8225F36EC000B4140C /* GoalProgressPersistingStack.swift */; };
+		00C90F8825F36F9F00B4140C /* GoalProgressPersistingStackTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F8725F36F9F00B4140C /* GoalProgressPersistingStackTransforms.swift */; };
+		00C90F8D25F3739B00B4140C /* GoalProgressFetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F8C25F3739B00B4140C /* GoalProgressFetchController.swift */; };
+		00C90F9825F3760C00B4140C /* CoreDataGoalProgressPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90F9725F3760C00B4140C /* CoreDataGoalProgressPersisting.swift */; };
+		00C90FAF25F385DB00B4140C /* HealthServiceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FAE25F385DB00B4140C /* HealthServiceTracker.swift */; };
+		00C90FC525F3962C00B4140C /* MyGoalsScreenInteractorUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FC425F3962C00B4140C /* MyGoalsScreenInteractorUsecase.swift */; };
+		00C90FD125F3A0FE00B4140C /* GoalFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FD025F3A0FE00B4140C /* GoalFetching.swift */; };
+		00C90FE025F3B75C00B4140C /* GoalProgressFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FDF25F3B75C00B4140C /* GoalProgressFetching.swift */; };
+		00C90FEB25F3C44400B4140C /* GoalDetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FEA25F3C44400B4140C /* GoalDetailsSwiftUIView.swift */; };
+		00C90FF125F3D31D00B4140C /* GoalDetailsSwiftUIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FF025F3D31D00B4140C /* GoalDetailsSwiftUIView+Subviews.swift */; };
+		00C90FF925F3D52E00B4140C /* GoalDetailsSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C90FF825F3D52E00B4140C /* GoalDetailsSwiftUIViewModel.swift */; };
+		00C9100125F3D5C600B4140C /* View+Hosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9100025F3D5C600B4140C /* View+Hosting.swift */; };
+		00C9100625F3D66700B4140C /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9100525F3D66700B4140C /* UIViewController+Child.swift */; };
+		00C9101125F3E98E00B4140C /* QueueHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9101025F3E98E00B4140C /* QueueHierarchy.swift */; };
+		00C9101C25F3F58600B4140C /* Application+DI+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9101B25F3F58600B4140C /* Application+DI+Mock.swift */; };
+		00E4EDA325F26FD300CE142E /* GoalProgressPersisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDA225F26FD300CE142E /* GoalProgressPersisting.swift */; };
+		00E4EDB925F2857B00CE142E /* UserGoalsService+Controlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDB825F2857B00CE142E /* UserGoalsService+Controlling.swift */; };
+		00E4EDC725F285F200CE142E /* UserGoalsService+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDC625F285F200CE142E /* UserGoalsService+Reading.swift */; };
+		00E4EDD525F28B7700CE142E /* HealthDataService+Controlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDD425F28B7700CE142E /* HealthDataService+Controlling.swift */; };
+		00E4EDDA25F28B8100CE142E /* HealthDataService+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDD925F28B8100CE142E /* HealthDataService+Reading.swift */; };
+		00E4EDDF25F28FEB00CE142E /* GoalProgressServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDDE25F28FEB00CE142E /* GoalProgressServiceProtocols.swift */; };
+		00E4EDE725F290CC00CE142E /* GoalProgressService+Controlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDE625F290CC00CE142E /* GoalProgressService+Controlling.swift */; };
+		00E4EDEC25F290F000CE142E /* GoalProgressService+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDEB25F290F000CE142E /* GoalProgressService+Reading.swift */; };
+		00E4EDF925F2B11200CE142E /* GoalDetailsScreenInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDF425F2B11200CE142E /* GoalDetailsScreenInterfaces.swift */; };
+		00E4EDFA25F2B11200CE142E /* GoalDetailsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDF525F2B11200CE142E /* GoalDetailsScreenPresenter.swift */; };
+		00E4EDFB25F2B11200CE142E /* GoalDetailsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDF625F2B11200CE142E /* GoalDetailsScreenViewController.swift */; };
+		00E4EDFC25F2B11200CE142E /* GoalDetailsScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDF725F2B11200CE142E /* GoalDetailsScreenInteractor.swift */; };
+		00E4EDFD25F2B11200CE142E /* GoalDetailsScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4EDF825F2B11200CE142E /* GoalDetailsScreenWireframe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0001FBA625EFCF1600BAEED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0001FB8725EFCF1400BAEED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0001FB8E25EFCF1400BAEED8;
+			remoteInfo = GoalTracker;
+		};
+		0001FBB125EFCF1600BAEED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0001FB8725EFCF1400BAEED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0001FB8E25EFCF1400BAEED8;
+			remoteInfo = GoalTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001FB8F25EFCF1400BAEED8 /* GoalTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001FB9225EFCF1400BAEED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0001FB9425EFCF1400BAEED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0001FB9625EFCF1400BAEED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0001FB9925EFCF1400BAEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0001FB9B25EFCF1600BAEED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0001FB9E25EFCF1600BAEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0001FBA025EFCF1600BAEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0001FBA525EFCF1600BAEED8 /* GoalTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoalTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001FBA925EFCF1600BAEED8 /* GoalTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerTests.swift; sourceTree = "<group>"; };
+		0001FBAB25EFCF1600BAEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0001FBB025EFCF1600BAEED8 /* GoalTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoalTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001FBB425EFCF1600BAEED8 /* GoalTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerUITests.swift; sourceTree = "<group>"; };
+		0001FBB625EFCF1600BAEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0001FBD425EFE61B00BAEED8 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		0001FBE125EFE69600BAEED8 /* StepCountGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountGoal.swift; sourceTree = "<group>"; };
+		0001FBE625EFE6BD00BAEED8 /* WalkingDistanceGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingDistanceGoal.swift; sourceTree = "<group>"; };
+		0001FBF125EFE74000BAEED8 /* RunningDistanceGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningDistanceGoal.swift; sourceTree = "<group>"; };
+		0001FBF825EFE7DC00BAEED8 /* HealthDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataService.swift; sourceTree = "<group>"; };
+		009F524F25F00B20003035EF /* UserGoalsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsRepository.swift; sourceTree = "<group>"; };
+		009F526025F01391003035EF /* UserGoalObjectEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalObjectEncoder.swift; sourceTree = "<group>"; };
+		009F527425F021CC003035EF /* UserGoalPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalPersisting.swift; sourceTree = "<group>"; };
+		009F528125F02346003035EF /* UserGoalCoreDataPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalCoreDataPersisting.swift; sourceTree = "<group>"; };
+		009F52A525F036DD003035EF /* UserGoalCoreDataPersistingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalCoreDataPersistingStack.swift; sourceTree = "<group>"; };
+		009F52AD25F0D3B4003035EF /* UserGoalCoreDataPersistingStackTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalCoreDataPersistingStackTransforms.swift; sourceTree = "<group>"; };
+		009F52C325F0E80F003035EF /* UserGoalCoreDataFetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalCoreDataFetchController.swift; sourceTree = "<group>"; };
+		009F52CC25F0EBB7003035EF /* KeyPath+StringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPath+StringValue.swift"; sourceTree = "<group>"; };
+		009F52DC25F0F6C6003035EF /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		009F52DD25F0F6C6003035EF /* UIStoryboard+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Init.swift"; sourceTree = "<group>"; };
+		009F52DE25F0F6C6003035EF /* UIViewController+Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Wireframe.swift"; sourceTree = "<group>"; };
+		009F52DF25F0F6C6003035EF /* UINavigationController+Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Wireframe.swift"; sourceTree = "<group>"; };
+		009F52E125F0F6C6003035EF /* WireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeProtocol.swift; sourceTree = "<group>"; };
+		009F52E225F0F6C6003035EF /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		009F52E325F0F6C6003035EF /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		009F52E425F0F6C6003035EF /* InteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		009F52F025F0F6FE003035EF /* MyGoalsScreenInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenInterfaces.swift; sourceTree = "<group>"; };
+		009F52F125F0F6FE003035EF /* MyGoalsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenPresenter.swift; sourceTree = "<group>"; };
+		009F52F225F0F6FE003035EF /* MyGoalsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenViewController.swift; sourceTree = "<group>"; };
+		009F52F325F0F6FE003035EF /* MyGoalsScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenInteractor.swift; sourceTree = "<group>"; };
+		009F52F425F0F6FE003035EF /* MyGoalsScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenWireframe.swift; sourceTree = "<group>"; };
+		009F52FE25F0FBDD003035EF /* UserGoalsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsService.swift; sourceTree = "<group>"; };
+		009F530A25F10264003035EF /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		009F531025F102A4003035EF /* Application+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+DI.swift"; sourceTree = "<group>"; };
+		009F531925F119EB003035EF /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		009F532425F11A20003035EF /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		009F533725F11E0F003035EF /* UserGoalsServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsServiceProtocols.swift; sourceTree = "<group>"; };
+		009F533D25F12671003035EF /* MyGoalsScreenGoalCellSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenGoalCellSwiftUI.swift; sourceTree = "<group>"; };
+		009F534925F12882003035EF /* CircularProgressSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressSwiftUI.swift; sourceTree = "<group>"; };
+		009F535125F12BBE003035EF /* ClosedRange+Clamping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+Clamping.swift"; sourceTree = "<group>"; };
+		009F535925F12DED003035EF /* UIView+Embedding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embedding.swift"; sourceTree = "<group>"; };
+		009F535F25F12E54003035EF /* MyGoalsScreenGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenGoalCell.swift; sourceTree = "<group>"; };
+		009F536725F12EC2003035EF /* SwiftUITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITableCell.swift; sourceTree = "<group>"; };
+		009F536C25F13102003035EF /* UITableViewCell+Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identity.swift"; sourceTree = "<group>"; };
+		009F537125F13159003035EF /* UITableView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cell.swift"; sourceTree = "<group>"; };
+		009F538E25F1385B003035EF /* MyGoalsScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenModels.swift; sourceTree = "<group>"; };
+		009F539325F13DF8003035EF /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		009F539B25F1434E003035EF /* ErrorAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertView.swift; sourceTree = "<group>"; };
+		009F53A025F14491003035EF /* UIViewController+ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorHandler.swift"; sourceTree = "<group>"; };
+		009F53A525F1485A003035EF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		009F53B325F14996003035EF /* UserGoalsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGoalsApiService.swift; sourceTree = "<group>"; };
+		009F53BB25F14DAC003035EF /* Publisher+AssignNoRetain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+AssignNoRetain.swift"; sourceTree = "<group>"; };
+		009F53DF25F1561C003035EF /* SwiftUICollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICollectionCell.swift; sourceTree = "<group>"; };
+		009F53F325F15CCA003035EF /* HealthDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataRepository.swift; sourceTree = "<group>"; };
+		009F53FD25F167EB003035EF /* GoalProgressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressService.swift; sourceTree = "<group>"; };
+		009F541525F16BA0003035EF /* HealthDataPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataPersisting.swift; sourceTree = "<group>"; };
+		009F541B25F16C68003035EF /* CoreDataHealthPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHealthPersisting.swift; sourceTree = "<group>"; };
+		009F542025F16E02003035EF /* HealthCoreDataPersistingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCoreDataPersistingStack.swift; sourceTree = "<group>"; };
+		009F542525F16E96003035EF /* HealthRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecord.swift; sourceTree = "<group>"; };
+		009F542A25F16ED5003035EF /* HealthCoreDataPersistingStackTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCoreDataPersistingStackTransforms.swift; sourceTree = "<group>"; };
+		009F542F25F174BF003035EF /* HealthCoreDataFetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCoreDataFetchController.swift; sourceTree = "<group>"; };
+		009F543725F17659003035EF /* Date+Manipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Manipulation.swift"; sourceTree = "<group>"; };
+		009F543C25F180C6003035EF /* HealthDataServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataServiceProtocols.swift; sourceTree = "<group>"; };
+		009F544D25F18468003035EF /* GoalTrackerRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoalTrackerRelease.entitlements; sourceTree = "<group>"; };
+		009F544E25F18468003035EF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		009F545425F184F9003035EF /* HealthKitPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissions.swift; sourceTree = "<group>"; };
+		009F545A25F18760003035EF /* GoalTrackerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoalTrackerDebug.entitlements; sourceTree = "<group>"; };
+		009F545F25F221AE003035EF /* AppleHealthDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHealthDataProviderTests.swift; sourceTree = "<group>"; };
+		009F547125F23196003035EF /* DateManipulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManipulationTests.swift; sourceTree = "<group>"; };
+		009F548225F24833003035EF /* GoalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgress.swift; sourceTree = "<group>"; };
+		009F548C25F24B8A003035EF /* ProgressEvaluating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressEvaluating.swift; sourceTree = "<group>"; };
+		009F549425F24BCA003035EF /* StepCountProgressEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountProgressEvaluator.swift; sourceTree = "<group>"; };
+		009F549D25F24C31003035EF /* StepCountProgressEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountProgressEvaluatorTests.swift; sourceTree = "<group>"; };
+		009F54A825F24F0D003035EF /* WalkedDistanceProgressEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkedDistanceProgressEvaluator.swift; sourceTree = "<group>"; };
+		009F54B025F24F38003035EF /* RanDistanceProgressEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanDistanceProgressEvaluator.swift; sourceTree = "<group>"; };
+		009F54B525F24F7B003035EF /* WalkedDistanceProgressEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkedDistanceProgressEvaluatorTests.swift; sourceTree = "<group>"; };
+		009F54C925F25009003035EF /* RanDistanceProgressEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanDistanceProgressEvaluatorTests.swift; sourceTree = "<group>"; };
+		009F54D325F250F9003035EF /* RewardGenerating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardGenerating.swift; sourceTree = "<group>"; };
+		009F54DB25F25219003035EF /* GoalReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReward.swift; sourceTree = "<group>"; };
+		009F54E025F25305003035EF /* RewardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardGenerator.swift; sourceTree = "<group>"; };
+		009F54EC25F25331003035EF /* RewardGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardGeneratorTests.swift; sourceTree = "<group>"; };
+		009F54F125F255F2003035EF /* GoalProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressTracker.swift; sourceTree = "<group>"; };
+		00C90F6B25F36B7900B4140C /* MainModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MainModel.xcdatamodel; sourceTree = "<group>"; };
+		00C90F6E25F36B7900B4140C /* MainCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoreDataStack.swift; sourceTree = "<group>"; };
+		00C90F8225F36EC000B4140C /* GoalProgressPersistingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressPersistingStack.swift; sourceTree = "<group>"; };
+		00C90F8725F36F9F00B4140C /* GoalProgressPersistingStackTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressPersistingStackTransforms.swift; sourceTree = "<group>"; };
+		00C90F8C25F3739B00B4140C /* GoalProgressFetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressFetchController.swift; sourceTree = "<group>"; };
+		00C90F9725F3760C00B4140C /* CoreDataGoalProgressPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGoalProgressPersisting.swift; sourceTree = "<group>"; };
+		00C90FAE25F385DB00B4140C /* HealthServiceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServiceTracker.swift; sourceTree = "<group>"; };
+		00C90FC425F3962C00B4140C /* MyGoalsScreenInteractorUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsScreenInteractorUsecase.swift; sourceTree = "<group>"; };
+		00C90FD025F3A0FE00B4140C /* GoalFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalFetching.swift; sourceTree = "<group>"; };
+		00C90FDF25F3B75C00B4140C /* GoalProgressFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressFetching.swift; sourceTree = "<group>"; };
+		00C90FEA25F3C44400B4140C /* GoalDetailsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsSwiftUIView.swift; sourceTree = "<group>"; };
+		00C90FF025F3D31D00B4140C /* GoalDetailsSwiftUIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalDetailsSwiftUIView+Subviews.swift"; sourceTree = "<group>"; };
+		00C90FF825F3D52E00B4140C /* GoalDetailsSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		00C9100025F3D5C600B4140C /* View+Hosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hosting.swift"; sourceTree = "<group>"; };
+		00C9100525F3D66700B4140C /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		00C9101025F3E98E00B4140C /* QueueHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueHierarchy.swift; sourceTree = "<group>"; };
+		00C9101B25F3F58600B4140C /* Application+DI+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+DI+Mock.swift"; sourceTree = "<group>"; };
+		00C9102325F3FA3B00B4140C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		00E4EDA225F26FD300CE142E /* GoalProgressPersisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressPersisting.swift; sourceTree = "<group>"; };
+		00E4EDB825F2857B00CE142E /* UserGoalsService+Controlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserGoalsService+Controlling.swift"; sourceTree = "<group>"; };
+		00E4EDC625F285F200CE142E /* UserGoalsService+Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserGoalsService+Reading.swift"; sourceTree = "<group>"; };
+		00E4EDD425F28B7700CE142E /* HealthDataService+Controlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthDataService+Controlling.swift"; sourceTree = "<group>"; };
+		00E4EDD925F28B8100CE142E /* HealthDataService+Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthDataService+Reading.swift"; sourceTree = "<group>"; };
+		00E4EDDE25F28FEB00CE142E /* GoalProgressServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressServiceProtocols.swift; sourceTree = "<group>"; };
+		00E4EDE625F290CC00CE142E /* GoalProgressService+Controlling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalProgressService+Controlling.swift"; sourceTree = "<group>"; };
+		00E4EDEB25F290F000CE142E /* GoalProgressService+Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalProgressService+Reading.swift"; sourceTree = "<group>"; };
+		00E4EDF425F2B11200CE142E /* GoalDetailsScreenInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenInterfaces.swift; sourceTree = "<group>"; };
+		00E4EDF525F2B11200CE142E /* GoalDetailsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenPresenter.swift; sourceTree = "<group>"; };
+		00E4EDF625F2B11200CE142E /* GoalDetailsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenViewController.swift; sourceTree = "<group>"; };
+		00E4EDF725F2B11200CE142E /* GoalDetailsScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenInteractor.swift; sourceTree = "<group>"; };
+		00E4EDF825F2B11200CE142E /* GoalDetailsScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenWireframe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0001FB8C25EFCF1400BAEED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009F534425F126EA003035EF /* Progress-Bar in Frameworks */,
+				0001FC1F25EFFDDC00BAEED8 /* UserGoalsService in Frameworks */,
+				009F529E25F0363A003035EF /* CoreDataStack in Frameworks */,
+				009F544F25F18468003035EF /* HealthKit.framework in Frameworks */,
+				0001FC0225EFE7ED00BAEED8 /* HealthDataProvider in Frameworks */,
+				009F530525F10247003035EF /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBA225EFCF1600BAEED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBAD25EFCF1600BAEED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0001FB8625EFCF1400BAEED8 = {
+			isa = PBXGroup;
+			children = (
+				00C9102325F3FA3B00B4140C /* README.md */,
+				0001FB9125EFCF1400BAEED8 /* GoalTracker */,
+				0001FBA825EFCF1600BAEED8 /* GoalTrackerTests */,
+				0001FBB325EFCF1600BAEED8 /* GoalTrackerUITests */,
+				0001FB9025EFCF1400BAEED8 /* Products */,
+				0001FC0025EFE7ED00BAEED8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0001FB9025EFCF1400BAEED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0001FB8F25EFCF1400BAEED8 /* GoalTracker.app */,
+				0001FBA525EFCF1600BAEED8 /* GoalTrackerTests.xctest */,
+				0001FBB025EFCF1600BAEED8 /* GoalTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0001FB9125EFCF1400BAEED8 /* GoalTracker */ = {
+			isa = PBXGroup;
+			children = (
+				009F545A25F18760003035EF /* GoalTrackerDebug.entitlements */,
+				009F544D25F18468003035EF /* GoalTrackerRelease.entitlements */,
+				009F545325F184E9003035EF /* Permissions */,
+				009F530925F10256003035EF /* Globals */,
+				009F532925F11AD6003035EF /* App */,
+				009F532B25F11C07003035EF /* Domains */,
+				009F52DA25F0F6C6003035EF /* BaseViper */,
+				009F52CB25F0EBAA003035EF /* Extensions */,
+				0001FBC825EFE58D00BAEED8 /* Models */,
+				0001FB9225EFCF1400BAEED8 /* AppDelegate.swift */,
+				0001FB9425EFCF1400BAEED8 /* SceneDelegate.swift */,
+				0001FB9625EFCF1400BAEED8 /* ViewController.swift */,
+				0001FB9825EFCF1400BAEED8 /* Main.storyboard */,
+				0001FB9B25EFCF1600BAEED8 /* Assets.xcassets */,
+				0001FB9D25EFCF1600BAEED8 /* LaunchScreen.storyboard */,
+				0001FBA025EFCF1600BAEED8 /* Info.plist */,
+			);
+			path = GoalTracker;
+			sourceTree = "<group>";
+		};
+		0001FBA825EFCF1600BAEED8 /* GoalTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				009F549C25F24C1F003035EF /* DomainTests */,
+				009F547025F23184003035EF /* ExtensionTests */,
+				009F545E25F22184003035EF /* IntegrationTest */,
+				0001FBA925EFCF1600BAEED8 /* GoalTrackerTests.swift */,
+				0001FBAB25EFCF1600BAEED8 /* Info.plist */,
+			);
+			path = GoalTrackerTests;
+			sourceTree = "<group>";
+		};
+		0001FBB325EFCF1600BAEED8 /* GoalTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0001FBB425EFCF1600BAEED8 /* GoalTrackerUITests.swift */,
+				0001FBB625EFCF1600BAEED8 /* Info.plist */,
+			);
+			path = GoalTrackerUITests;
+			sourceTree = "<group>";
+		};
+		0001FBC825EFE58D00BAEED8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E4ED9725F26BDE00CE142E /* HealthModels */,
+				009F548725F248B1003035EF /* GoalProgressModels */,
+				0001FBD325EFE61000BAEED8 /* GoalModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0001FBD325EFE61000BAEED8 /* GoalModels */ = {
+			isa = PBXGroup;
+			children = (
+				0001FBD425EFE61B00BAEED8 /* Goal.swift */,
+				009F54DB25F25219003035EF /* GoalReward.swift */,
+				0001FBE125EFE69600BAEED8 /* StepCountGoal.swift */,
+				0001FBE625EFE6BD00BAEED8 /* WalkingDistanceGoal.swift */,
+				0001FBF125EFE74000BAEED8 /* RunningDistanceGoal.swift */,
+			);
+			path = GoalModels;
+			sourceTree = "<group>";
+		};
+		0001FBF625EFE7C000BAEED8 /* UserHealthDataDomain */ = {
+			isa = PBXGroup;
+			children = (
+				009F53EF25F15C93003035EF /* HealthDataRepository */,
+				0001FBF725EFE7C700BAEED8 /* HealthDataService */,
+				009F541425F16B13003035EF /* HealthDataPersistence */,
+			);
+			path = UserHealthDataDomain;
+			sourceTree = "<group>";
+		};
+		0001FBF725EFE7C700BAEED8 /* HealthDataService */ = {
+			isa = PBXGroup;
+			children = (
+				009F543C25F180C6003035EF /* HealthDataServiceProtocols.swift */,
+				00C90FD925F3A8B100B4140C /* HealthServiceTracker */,
+				00C90FD825F3A8A600B4140C /* HealthDataService */,
+			);
+			path = HealthDataService;
+			sourceTree = "<group>";
+		};
+		0001FC0025EFE7ED00BAEED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				009F544E25F18468003035EF /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		009F525425F00C90003035EF /* UserGoalsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				009F53B325F14996003035EF /* UserGoalsApiService.swift */,
+				009F524F25F00B20003035EF /* UserGoalsRepository.swift */,
+				009F526025F01391003035EF /* UserGoalObjectEncoder.swift */,
+			);
+			path = UserGoalsRepository;
+			sourceTree = "<group>";
+		};
+		009F527925F021D0003035EF /* CoreDataPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				009F528125F02346003035EF /* UserGoalCoreDataPersisting.swift */,
+				009F52A525F036DD003035EF /* UserGoalCoreDataPersistingStack.swift */,
+				009F52C325F0E80F003035EF /* UserGoalCoreDataFetchController.swift */,
+				009F52AD25F0D3B4003035EF /* UserGoalCoreDataPersistingStackTransforms.swift */,
+			);
+			path = CoreDataPersistence;
+			sourceTree = "<group>";
+		};
+		009F527D25F022CE003035EF /* UserGoalsPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				009F527425F021CC003035EF /* UserGoalPersisting.swift */,
+				009F527925F021D0003035EF /* CoreDataPersistence */,
+			);
+			path = UserGoalsPersistence;
+			sourceTree = "<group>";
+		};
+		009F52CB25F0EBAA003035EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				009F52CC25F0EBB7003035EF /* KeyPath+StringValue.swift */,
+				009F535125F12BBE003035EF /* ClosedRange+Clamping.swift */,
+				009F535925F12DED003035EF /* UIView+Embedding.swift */,
+				009F536C25F13102003035EF /* UITableViewCell+Identity.swift */,
+				009F537125F13159003035EF /* UITableView+Cell.swift */,
+				009F53A025F14491003035EF /* UIViewController+ErrorHandler.swift */,
+				009F53BB25F14DAC003035EF /* Publisher+AssignNoRetain.swift */,
+				009F543725F17659003035EF /* Date+Manipulation.swift */,
+				00C9100025F3D5C600B4140C /* View+Hosting.swift */,
+				00C9100525F3D66700B4140C /* UIViewController+Child.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		009F52D725F0F67F003035EF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				00E4EDF325F2B0F600CE142E /* GoalDetailsScreen */,
+				009F52D825F0F686003035EF /* GoalsScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		009F52D825F0F686003035EF /* GoalsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				00C90FCC25F39EBA00B4140C /* Interactor */,
+				009F533C25F12641003035EF /* CustomViews */,
+				009F52F025F0F6FE003035EF /* MyGoalsScreenInterfaces.swift */,
+				009F52F225F0F6FE003035EF /* MyGoalsScreenViewController.swift */,
+				009F52F125F0F6FE003035EF /* MyGoalsScreenPresenter.swift */,
+				009F52F425F0F6FE003035EF /* MyGoalsScreenWireframe.swift */,
+				009F538E25F1385B003035EF /* MyGoalsScreenModels.swift */,
+			);
+			path = GoalsScreen;
+			sourceTree = "<group>";
+		};
+		009F52DA25F0F6C6003035EF /* BaseViper */ = {
+			isa = PBXGroup;
+			children = (
+				009F52DB25F0F6C6003035EF /* Implementation */,
+				009F52E025F0F6C6003035EF /* Interfaces */,
+			);
+			path = BaseViper;
+			sourceTree = "<group>";
+		};
+		009F52DB25F0F6C6003035EF /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				009F52DC25F0F6C6003035EF /* BaseWireframe.swift */,
+				009F52DD25F0F6C6003035EF /* UIStoryboard+Init.swift */,
+				009F52DE25F0F6C6003035EF /* UIViewController+Wireframe.swift */,
+				009F52DF25F0F6C6003035EF /* UINavigationController+Wireframe.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		009F52E025F0F6C6003035EF /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				009F52E125F0F6C6003035EF /* WireframeProtocol.swift */,
+				009F52E225F0F6C6003035EF /* ViewProtocol.swift */,
+				009F52E325F0F6C6003035EF /* PresenterProtocol.swift */,
+				009F52E425F0F6C6003035EF /* InteractorProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		009F52FD25F0FBC6003035EF /* UserGoalsService */ = {
+			isa = PBXGroup;
+			children = (
+				009F533725F11E0F003035EF /* UserGoalsServiceProtocols.swift */,
+				009F52FE25F0FBDD003035EF /* UserGoalsService.swift */,
+				00E4EDB825F2857B00CE142E /* UserGoalsService+Controlling.swift */,
+				00E4EDC625F285F200CE142E /* UserGoalsService+Reading.swift */,
+				00C90FD025F3A0FE00B4140C /* GoalFetching.swift */,
+			);
+			path = UserGoalsService;
+			sourceTree = "<group>";
+		};
+		009F530925F10256003035EF /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				009F531925F119EB003035EF /* World.swift */,
+				009F530A25F10264003035EF /* Application.swift */,
+				009F531025F102A4003035EF /* Application+DI.swift */,
+				00C9101B25F3F58600B4140C /* Application+DI+Mock.swift */,
+				009F532425F11A20003035EF /* Device.swift */,
+				009F53A525F1485A003035EF /* AppConstants.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		009F532925F11AD6003035EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				009F532A25F11BFE003035EF /* CustomViews */,
+				009F52D725F0F67F003035EF /* Screens */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		009F532A25F11BFE003035EF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				009F534925F12882003035EF /* CircularProgressSwiftUI.swift */,
+				009F536725F12EC2003035EF /* SwiftUITableCell.swift */,
+				009F53DF25F1561C003035EF /* SwiftUICollectionCell.swift */,
+				009F539B25F1434E003035EF /* ErrorAlertView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		009F532B25F11C07003035EF /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				009F539325F13DF8003035EF /* DomainError.swift */,
+				00C9101025F3E98E00B4140C /* QueueHierarchy.swift */,
+				00C90F6925F36B6600B4140C /* MainCoreDataStack */,
+				009F533025F11D37003035EF /* UserGoalsDomain */,
+				0001FBF625EFE7C000BAEED8 /* UserHealthDataDomain */,
+				009F53FB25F167CF003035EF /* GoalProgressDomain */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		009F533025F11D37003035EF /* UserGoalsDomain */ = {
+			isa = PBXGroup;
+			children = (
+				009F525425F00C90003035EF /* UserGoalsRepository */,
+				009F52FD25F0FBC6003035EF /* UserGoalsService */,
+				009F527D25F022CE003035EF /* UserGoalsPersistence */,
+			);
+			path = UserGoalsDomain;
+			sourceTree = "<group>";
+		};
+		009F533C25F12641003035EF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				009F533D25F12671003035EF /* MyGoalsScreenGoalCellSwiftUI.swift */,
+				009F535F25F12E54003035EF /* MyGoalsScreenGoalCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		009F53EF25F15C93003035EF /* HealthDataRepository */ = {
+			isa = PBXGroup;
+			children = (
+				009F53F325F15CCA003035EF /* HealthDataRepository.swift */,
+			);
+			path = HealthDataRepository;
+			sourceTree = "<group>";
+		};
+		009F53FB25F167CF003035EF /* GoalProgressDomain */ = {
+			isa = PBXGroup;
+			children = (
+				009F53FC25F167D8003035EF /* GoalProgressService */,
+				00E4EDA125F26FB600CE142E /* GoalProgressPersistence */,
+			);
+			path = GoalProgressDomain;
+			sourceTree = "<group>";
+		};
+		009F53FC25F167D8003035EF /* GoalProgressService */ = {
+			isa = PBXGroup;
+			children = (
+				00E4EDDE25F28FEB00CE142E /* GoalProgressServiceProtocols.swift */,
+				00C90FDF25F3B75C00B4140C /* GoalProgressFetching.swift */,
+				00C90FDD25F3B6CD00B4140C /* GoalProgressService */,
+				00C90FDE25F3B6DE00B4140C /* GoalProgressTracker */,
+				009F548B25F24B78003035EF /* ProgressEvaluator */,
+				009F54D225F250E6003035EF /* RewardGenerator */,
+			);
+			path = GoalProgressService;
+			sourceTree = "<group>";
+		};
+		009F541425F16B13003035EF /* HealthDataPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				009F541525F16BA0003035EF /* HealthDataPersisting.swift */,
+				009F541A25F16BF0003035EF /* CoreDataHealthPersistence */,
+			);
+			path = HealthDataPersistence;
+			sourceTree = "<group>";
+		};
+		009F541A25F16BF0003035EF /* CoreDataHealthPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				009F541B25F16C68003035EF /* CoreDataHealthPersisting.swift */,
+				009F542025F16E02003035EF /* HealthCoreDataPersistingStack.swift */,
+				009F542F25F174BF003035EF /* HealthCoreDataFetchController.swift */,
+				009F542A25F16ED5003035EF /* HealthCoreDataPersistingStackTransforms.swift */,
+			);
+			path = CoreDataHealthPersistence;
+			sourceTree = "<group>";
+		};
+		009F545325F184E9003035EF /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				009F545425F184F9003035EF /* HealthKitPermissions.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		009F545E25F22184003035EF /* IntegrationTest */ = {
+			isa = PBXGroup;
+			children = (
+				009F545F25F221AE003035EF /* AppleHealthDataProviderTests.swift */,
+			);
+			path = IntegrationTest;
+			sourceTree = "<group>";
+		};
+		009F547025F23184003035EF /* ExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				009F547125F23196003035EF /* DateManipulationTests.swift */,
+			);
+			path = ExtensionTests;
+			sourceTree = "<group>";
+		};
+		009F548725F248B1003035EF /* GoalProgressModels */ = {
+			isa = PBXGroup;
+			children = (
+				009F548225F24833003035EF /* GoalProgress.swift */,
+			);
+			path = GoalProgressModels;
+			sourceTree = "<group>";
+		};
+		009F548B25F24B78003035EF /* ProgressEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				009F548C25F24B8A003035EF /* ProgressEvaluating.swift */,
+				009F549425F24BCA003035EF /* StepCountProgressEvaluator.swift */,
+				009F54A825F24F0D003035EF /* WalkedDistanceProgressEvaluator.swift */,
+				009F54B025F24F38003035EF /* RanDistanceProgressEvaluator.swift */,
+			);
+			path = ProgressEvaluator;
+			sourceTree = "<group>";
+		};
+		009F549C25F24C1F003035EF /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				009F54E525F2531F003035EF /* RewardGeneratorTests */,
+				009F54CE25F25021003035EF /* ProgressEvaluatorTests */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		009F54CE25F25021003035EF /* ProgressEvaluatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				009F549D25F24C31003035EF /* StepCountProgressEvaluatorTests.swift */,
+				009F54B525F24F7B003035EF /* WalkedDistanceProgressEvaluatorTests.swift */,
+				009F54C925F25009003035EF /* RanDistanceProgressEvaluatorTests.swift */,
+			);
+			path = ProgressEvaluatorTests;
+			sourceTree = "<group>";
+		};
+		009F54D225F250E6003035EF /* RewardGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				009F54D325F250F9003035EF /* RewardGenerating.swift */,
+				009F54E025F25305003035EF /* RewardGenerator.swift */,
+			);
+			path = RewardGenerator;
+			sourceTree = "<group>";
+		};
+		009F54E525F2531F003035EF /* RewardGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				009F54EC25F25331003035EF /* RewardGeneratorTests.swift */,
+			);
+			path = RewardGeneratorTests;
+			sourceTree = "<group>";
+		};
+		00C90F6925F36B6600B4140C /* MainCoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				00C90F6E25F36B7900B4140C /* MainCoreDataStack.swift */,
+				00C90F6A25F36B7900B4140C /* MainModel.xcdatamodeld */,
+			);
+			path = MainCoreDataStack;
+			sourceTree = "<group>";
+		};
+		00C90FCC25F39EBA00B4140C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				009F52F325F0F6FE003035EF /* MyGoalsScreenInteractor.swift */,
+				00C90FC425F3962C00B4140C /* MyGoalsScreenInteractorUsecase.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		00C90FD825F3A8A600B4140C /* HealthDataService */ = {
+			isa = PBXGroup;
+			children = (
+				0001FBF825EFE7DC00BAEED8 /* HealthDataService.swift */,
+				00E4EDD425F28B7700CE142E /* HealthDataService+Controlling.swift */,
+				00E4EDD925F28B8100CE142E /* HealthDataService+Reading.swift */,
+			);
+			path = HealthDataService;
+			sourceTree = "<group>";
+		};
+		00C90FD925F3A8B100B4140C /* HealthServiceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				00C90FAE25F385DB00B4140C /* HealthServiceTracker.swift */,
+			);
+			path = HealthServiceTracker;
+			sourceTree = "<group>";
+		};
+		00C90FDD25F3B6CD00B4140C /* GoalProgressService */ = {
+			isa = PBXGroup;
+			children = (
+				009F53FD25F167EB003035EF /* GoalProgressService.swift */,
+				00E4EDE625F290CC00CE142E /* GoalProgressService+Controlling.swift */,
+				00E4EDEB25F290F000CE142E /* GoalProgressService+Reading.swift */,
+			);
+			path = GoalProgressService;
+			sourceTree = "<group>";
+		};
+		00C90FDE25F3B6DE00B4140C /* GoalProgressTracker */ = {
+			isa = PBXGroup;
+			children = (
+				009F54F125F255F2003035EF /* GoalProgressTracker.swift */,
+			);
+			path = GoalProgressTracker;
+			sourceTree = "<group>";
+		};
+		00C90FEF25F3D2FC00B4140C /* GoalDetailsSwiftUIView */ = {
+			isa = PBXGroup;
+			children = (
+				00C90FEA25F3C44400B4140C /* GoalDetailsSwiftUIView.swift */,
+				00C90FF025F3D31D00B4140C /* GoalDetailsSwiftUIView+Subviews.swift */,
+				00C90FF825F3D52E00B4140C /* GoalDetailsSwiftUIViewModel.swift */,
+			);
+			path = GoalDetailsSwiftUIView;
+			sourceTree = "<group>";
+		};
+		00E4ED9725F26BDE00CE142E /* HealthModels */ = {
+			isa = PBXGroup;
+			children = (
+				009F542525F16E96003035EF /* HealthRecord.swift */,
+			);
+			path = HealthModels;
+			sourceTree = "<group>";
+		};
+		00E4EDA125F26FB600CE142E /* GoalProgressPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				00E4EDA225F26FD300CE142E /* GoalProgressPersisting.swift */,
+				00C90F9725F3760C00B4140C /* CoreDataGoalProgressPersisting.swift */,
+				00C90F8225F36EC000B4140C /* GoalProgressPersistingStack.swift */,
+				00C90F8C25F3739B00B4140C /* GoalProgressFetchController.swift */,
+				00C90F8725F36F9F00B4140C /* GoalProgressPersistingStackTransforms.swift */,
+			);
+			path = GoalProgressPersistence;
+			sourceTree = "<group>";
+		};
+		00E4EDF325F2B0F600CE142E /* GoalDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				00C90FEF25F3D2FC00B4140C /* GoalDetailsSwiftUIView */,
+				00E4EDF425F2B11200CE142E /* GoalDetailsScreenInterfaces.swift */,
+				00E4EDF525F2B11200CE142E /* GoalDetailsScreenPresenter.swift */,
+				00E4EDF625F2B11200CE142E /* GoalDetailsScreenViewController.swift */,
+				00E4EDF725F2B11200CE142E /* GoalDetailsScreenInteractor.swift */,
+				00E4EDF825F2B11200CE142E /* GoalDetailsScreenWireframe.swift */,
+			);
+			path = GoalDetailsScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0001FB8E25EFCF1400BAEED8 /* GoalTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001FBB925EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTracker" */;
+			buildPhases = (
+				0001FB8B25EFCF1400BAEED8 /* Sources */,
+				0001FB8C25EFCF1400BAEED8 /* Frameworks */,
+				0001FB8D25EFCF1400BAEED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoalTracker;
+			packageProductDependencies = (
+				0001FC0125EFE7ED00BAEED8 /* HealthDataProvider */,
+				0001FC1E25EFFDDC00BAEED8 /* UserGoalsService */,
+				009F529D25F0363A003035EF /* CoreDataStack */,
+				009F530425F10247003035EF /* Swinject */,
+				009F534325F126EA003035EF /* Progress-Bar */,
+			);
+			productName = GoalTracker;
+			productReference = 0001FB8F25EFCF1400BAEED8 /* GoalTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0001FBA425EFCF1600BAEED8 /* GoalTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001FBBC25EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTrackerTests" */;
+			buildPhases = (
+				0001FBA125EFCF1600BAEED8 /* Sources */,
+				0001FBA225EFCF1600BAEED8 /* Frameworks */,
+				0001FBA325EFCF1600BAEED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0001FBA725EFCF1600BAEED8 /* PBXTargetDependency */,
+			);
+			name = GoalTrackerTests;
+			productName = GoalTrackerTests;
+			productReference = 0001FBA525EFCF1600BAEED8 /* GoalTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0001FBAF25EFCF1600BAEED8 /* GoalTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001FBBF25EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTrackerUITests" */;
+			buildPhases = (
+				0001FBAC25EFCF1600BAEED8 /* Sources */,
+				0001FBAD25EFCF1600BAEED8 /* Frameworks */,
+				0001FBAE25EFCF1600BAEED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0001FBB225EFCF1600BAEED8 /* PBXTargetDependency */,
+			);
+			name = GoalTrackerUITests;
+			productName = GoalTrackerUITests;
+			productReference = 0001FBB025EFCF1600BAEED8 /* GoalTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0001FB8725EFCF1400BAEED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0001FB8E25EFCF1400BAEED8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0001FBA425EFCF1600BAEED8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0001FB8E25EFCF1400BAEED8;
+					};
+					0001FBAF25EFCF1600BAEED8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0001FB8E25EFCF1400BAEED8;
+					};
+				};
+			};
+			buildConfigurationList = 0001FB8A25EFCF1400BAEED8 /* Build configuration list for PBXProject "GoalTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0001FB8625EFCF1400BAEED8;
+			packageReferences = (
+				009F530325F10247003035EF /* XCRemoteSwiftPackageReference "Swinject" */,
+				009F534225F126EA003035EF /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */,
+			);
+			productRefGroup = 0001FB9025EFCF1400BAEED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0001FB8E25EFCF1400BAEED8 /* GoalTracker */,
+				0001FBA425EFCF1600BAEED8 /* GoalTrackerTests */,
+				0001FBAF25EFCF1600BAEED8 /* GoalTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0001FB8D25EFCF1400BAEED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001FB9F25EFCF1600BAEED8 /* LaunchScreen.storyboard in Resources */,
+				0001FB9C25EFCF1600BAEED8 /* Assets.xcassets in Resources */,
+				0001FB9A25EFCF1400BAEED8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBA325EFCF1600BAEED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBAE25EFCF1600BAEED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0001FB8B25EFCF1400BAEED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001FBE225EFE69600BAEED8 /* StepCountGoal.swift in Sources */,
+				009F52CD25F0EBB7003035EF /* KeyPath+StringValue.swift in Sources */,
+				009F538F25F1385B003035EF /* MyGoalsScreenModels.swift in Sources */,
+				00C90F8D25F3739B00B4140C /* GoalProgressFetchController.swift in Sources */,
+				009F530B25F10264003035EF /* Application.swift in Sources */,
+				00C9100125F3D5C600B4140C /* View+Hosting.swift in Sources */,
+				00C90FEB25F3C44400B4140C /* GoalDetailsSwiftUIView.swift in Sources */,
+				009F533E25F12671003035EF /* MyGoalsScreenGoalCellSwiftUI.swift in Sources */,
+				00E4EDFD25F2B11200CE142E /* GoalDetailsScreenWireframe.swift in Sources */,
+				009F52F925F0F6FE003035EF /* MyGoalsScreenWireframe.swift in Sources */,
+				009F52F725F0F6FE003035EF /* MyGoalsScreenViewController.swift in Sources */,
+				00E4EDFB25F2B11200CE142E /* GoalDetailsScreenViewController.swift in Sources */,
+				009F543825F17659003035EF /* Date+Manipulation.swift in Sources */,
+				009F531125F102A4003035EF /* Application+DI.swift in Sources */,
+				009F52E825F0F6C6003035EF /* UINavigationController+Wireframe.swift in Sources */,
+				00E4EDFA25F2B11200CE142E /* GoalDetailsScreenPresenter.swift in Sources */,
+				009F52E925F0F6C6003035EF /* WireframeProtocol.swift in Sources */,
+				00C90FF925F3D52E00B4140C /* GoalDetailsSwiftUIViewModel.swift in Sources */,
+				00E4EDE725F290CC00CE142E /* GoalProgressService+Controlling.swift in Sources */,
+				009F548325F24833003035EF /* GoalProgress.swift in Sources */,
+				00C90F6F25F36B7900B4140C /* MainModel.xcdatamodeld in Sources */,
+				009F542125F16E02003035EF /* HealthCoreDataPersistingStack.swift in Sources */,
+				009F543D25F180C6003035EF /* HealthDataServiceProtocols.swift in Sources */,
+				00E4EDF925F2B11200CE142E /* GoalDetailsScreenInterfaces.swift in Sources */,
+				009F52F525F0F6FE003035EF /* MyGoalsScreenInterfaces.swift in Sources */,
+				00E4EDC725F285F200CE142E /* UserGoalsService+Reading.swift in Sources */,
+				009F542B25F16ED5003035EF /* HealthCoreDataPersistingStackTransforms.swift in Sources */,
+				009F53A125F14491003035EF /* UIViewController+ErrorHandler.swift in Sources */,
+				009F526125F01391003035EF /* UserGoalObjectEncoder.swift in Sources */,
+				00E4EDD525F28B7700CE142E /* HealthDataService+Controlling.swift in Sources */,
+				009F543025F174BF003035EF /* HealthCoreDataFetchController.swift in Sources */,
+				009F541625F16BA0003035EF /* HealthDataPersisting.swift in Sources */,
+				009F54A925F24F0D003035EF /* WalkedDistanceProgressEvaluator.swift in Sources */,
+				00C90F8325F36EC000B4140C /* GoalProgressPersistingStack.swift in Sources */,
+				00E4EDDA25F28B8100CE142E /* HealthDataService+Reading.swift in Sources */,
+				0001FBF225EFE74000BAEED8 /* RunningDistanceGoal.swift in Sources */,
+				009F54D425F250F9003035EF /* RewardGenerating.swift in Sources */,
+				00C90F7225F36B7900B4140C /* MainCoreDataStack.swift in Sources */,
+				009F52FF25F0FBDD003035EF /* UserGoalsService.swift in Sources */,
+				009F536D25F13102003035EF /* UITableViewCell+Identity.swift in Sources */,
+				009F542625F16E96003035EF /* HealthRecord.swift in Sources */,
+				00C90F9825F3760C00B4140C /* CoreDataGoalProgressPersisting.swift in Sources */,
+				009F54DC25F25219003035EF /* GoalReward.swift in Sources */,
+				009F53A625F1485A003035EF /* AppConstants.swift in Sources */,
+				0001FB9725EFCF1400BAEED8 /* ViewController.swift in Sources */,
+				009F541C25F16C68003035EF /* CoreDataHealthPersisting.swift in Sources */,
+				009F52F625F0F6FE003035EF /* MyGoalsScreenPresenter.swift in Sources */,
+				009F52E625F0F6C6003035EF /* UIStoryboard+Init.swift in Sources */,
+				009F53BC25F14DAC003035EF /* Publisher+AssignNoRetain.swift in Sources */,
+				0001FBF925EFE7DC00BAEED8 /* HealthDataService.swift in Sources */,
+				009F528225F02346003035EF /* UserGoalCoreDataPersisting.swift in Sources */,
+				009F52EB25F0F6C6003035EF /* PresenterProtocol.swift in Sources */,
+				009F536825F12EC2003035EF /* SwiftUITableCell.swift in Sources */,
+				00C90FE025F3B75C00B4140C /* GoalProgressFetching.swift in Sources */,
+				00E4EDB925F2857B00CE142E /* UserGoalsService+Controlling.swift in Sources */,
+				0001FB9325EFCF1400BAEED8 /* AppDelegate.swift in Sources */,
+				009F52A625F036DD003035EF /* UserGoalCoreDataPersistingStack.swift in Sources */,
+				0001FBD525EFE61B00BAEED8 /* Goal.swift in Sources */,
+				00C90FAF25F385DB00B4140C /* HealthServiceTracker.swift in Sources */,
+				009F52F825F0F6FE003035EF /* MyGoalsScreenInteractor.swift in Sources */,
+				00C90FC525F3962C00B4140C /* MyGoalsScreenInteractorUsecase.swift in Sources */,
+				009F52AE25F0D3B4003035EF /* UserGoalCoreDataPersistingStackTransforms.swift in Sources */,
+				009F531A25F119EB003035EF /* World.swift in Sources */,
+				009F534A25F12882003035EF /* CircularProgressSwiftUI.swift in Sources */,
+				009F537225F13159003035EF /* UITableView+Cell.swift in Sources */,
+				009F52EA25F0F6C6003035EF /* ViewProtocol.swift in Sources */,
+				00E4EDEC25F290F000CE142E /* GoalProgressService+Reading.swift in Sources */,
+				009F53E025F1561C003035EF /* SwiftUICollectionCell.swift in Sources */,
+				009F53B425F14996003035EF /* UserGoalsApiService.swift in Sources */,
+				00E4EDFC25F2B11200CE142E /* GoalDetailsScreenInteractor.swift in Sources */,
+				009F52E725F0F6C6003035EF /* UIViewController+Wireframe.swift in Sources */,
+				00C9101125F3E98E00B4140C /* QueueHierarchy.swift in Sources */,
+				009F52E525F0F6C6003035EF /* BaseWireframe.swift in Sources */,
+				009F53FE25F167EB003035EF /* GoalProgressService.swift in Sources */,
+				009F533825F11E0F003035EF /* UserGoalsServiceProtocols.swift in Sources */,
+				009F525025F00B20003035EF /* UserGoalsRepository.swift in Sources */,
+				009F54E125F25305003035EF /* RewardGenerator.swift in Sources */,
+				009F536025F12E54003035EF /* MyGoalsScreenGoalCell.swift in Sources */,
+				009F527525F021CC003035EF /* UserGoalPersisting.swift in Sources */,
+				009F549525F24BCA003035EF /* StepCountProgressEvaluator.swift in Sources */,
+				00E4EDDF25F28FEB00CE142E /* GoalProgressServiceProtocols.swift in Sources */,
+				009F54F225F255F2003035EF /* GoalProgressTracker.swift in Sources */,
+				009F52EC25F0F6C6003035EF /* InteractorProtocol.swift in Sources */,
+				009F548D25F24B8A003035EF /* ProgressEvaluating.swift in Sources */,
+				00E4EDA325F26FD300CE142E /* GoalProgressPersisting.swift in Sources */,
+				009F539C25F1434E003035EF /* ErrorAlertView.swift in Sources */,
+				009F54B125F24F38003035EF /* RanDistanceProgressEvaluator.swift in Sources */,
+				009F52C425F0E80F003035EF /* UserGoalCoreDataFetchController.swift in Sources */,
+				00C9101C25F3F58600B4140C /* Application+DI+Mock.swift in Sources */,
+				009F535225F12BBE003035EF /* ClosedRange+Clamping.swift in Sources */,
+				00C90FF125F3D31D00B4140C /* GoalDetailsSwiftUIView+Subviews.swift in Sources */,
+				0001FB9525EFCF1400BAEED8 /* SceneDelegate.swift in Sources */,
+				009F545525F184F9003035EF /* HealthKitPermissions.swift in Sources */,
+				0001FBE725EFE6BD00BAEED8 /* WalkingDistanceGoal.swift in Sources */,
+				009F53F425F15CCA003035EF /* HealthDataRepository.swift in Sources */,
+				009F532525F11A20003035EF /* Device.swift in Sources */,
+				009F539425F13DF8003035EF /* DomainError.swift in Sources */,
+				00C90FD125F3A0FE00B4140C /* GoalFetching.swift in Sources */,
+				009F535A25F12DED003035EF /* UIView+Embedding.swift in Sources */,
+				00C90F8825F36F9F00B4140C /* GoalProgressPersistingStackTransforms.swift in Sources */,
+				00C9100625F3D66700B4140C /* UIViewController+Child.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBA125EFCF1600BAEED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009F54ED25F25331003035EF /* RewardGeneratorTests.swift in Sources */,
+				009F547225F23196003035EF /* DateManipulationTests.swift in Sources */,
+				009F549E25F24C31003035EF /* StepCountProgressEvaluatorTests.swift in Sources */,
+				0001FBAA25EFCF1600BAEED8 /* GoalTrackerTests.swift in Sources */,
+				009F546025F221AE003035EF /* AppleHealthDataProviderTests.swift in Sources */,
+				009F54B625F24F7B003035EF /* WalkedDistanceProgressEvaluatorTests.swift in Sources */,
+				009F54CA25F25009003035EF /* RanDistanceProgressEvaluatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001FBAC25EFCF1600BAEED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001FBB525EFCF1600BAEED8 /* GoalTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0001FBA725EFCF1600BAEED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0001FB8E25EFCF1400BAEED8 /* GoalTracker */;
+			targetProxy = 0001FBA625EFCF1600BAEED8 /* PBXContainerItemProxy */;
+		};
+		0001FBB225EFCF1600BAEED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0001FB8E25EFCF1400BAEED8 /* GoalTracker */;
+			targetProxy = 0001FBB125EFCF1600BAEED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0001FB9825EFCF1400BAEED8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0001FB9925EFCF1400BAEED8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0001FB9D25EFCF1600BAEED8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0001FB9E25EFCF1600BAEED8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0001FBB725EFCF1600BAEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0001FBB825EFCF1600BAEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0001FBBA25EFCF1600BAEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalTracker/GoalTrackerDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				GoalsServiceBaseUrl = "https://thebigachallenge.appspot.com";
+				INFOPLIST_FILE = GoalTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0001FBBB25EFCF1600BAEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoalTracker/GoalTrackerRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				GoalsServiceBaseUrl = "https://thebigachallenge.appspot.com";
+				INFOPLIST_FILE = GoalTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0001FBBD25EFCF1600BAEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				INFOPLIST_FILE = GoalTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoalTracker.app/GoalTracker";
+			};
+			name = Debug;
+		};
+		0001FBBE25EFCF1600BAEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				INFOPLIST_FILE = GoalTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoalTracker.app/GoalTracker";
+			};
+			name = Release;
+		};
+		0001FBC025EFCF1600BAEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				INFOPLIST_FILE = GoalTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoalTracker;
+			};
+			name = Debug;
+		};
+		0001FBC125EFCF1600BAEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8T9B8CB9S;
+				INFOPLIST_FILE = GoalTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgesJamous.GoalTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoalTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0001FB8A25EFCF1400BAEED8 /* Build configuration list for PBXProject "GoalTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001FBB725EFCF1600BAEED8 /* Debug */,
+				0001FBB825EFCF1600BAEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0001FBB925EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001FBBA25EFCF1600BAEED8 /* Debug */,
+				0001FBBB25EFCF1600BAEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0001FBBC25EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001FBBD25EFCF1600BAEED8 /* Debug */,
+				0001FBBE25EFCF1600BAEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0001FBBF25EFCF1600BAEED8 /* Build configuration list for PBXNativeTarget "GoalTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001FBC025EFCF1600BAEED8 /* Debug */,
+				0001FBC125EFCF1600BAEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		009F530325F10247003035EF /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.7.1;
+			};
+		};
+		009F534225F126EA003035EF /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AmeddahAchraf/Progress-Bar-SwifttUI";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0001FC0125EFE7ED00BAEED8 /* HealthDataProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HealthDataProvider;
+		};
+		0001FC1E25EFFDDC00BAEED8 /* UserGoalsService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserGoalsService;
+		};
+		009F529D25F0363A003035EF /* CoreDataStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataStack;
+		};
+		009F530425F10247003035EF /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009F530325F10247003035EF /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		009F534325F126EA003035EF /* Progress-Bar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009F534225F126EA003035EF /* XCRemoteSwiftPackageReference "Progress-Bar-SwifttUI" */;
+			productName = "Progress-Bar";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		00C90F6A25F36B7900B4140C /* MainModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00C90F6B25F36B7900B4140C /* MainModel.xcdatamodel */,
+			);
+			currentVersion = 00C90F6B25F36B7900B4140C /* MainModel.xcdatamodel */;
+			path = MainModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0001FB8725EFCF1400BAEED8 /* Project object */;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RewardEntity" representedClassName="RewardEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="points" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="trophy" optional="YES" attributeType="String"/>
+        <relationship name="runningDistanceGoalEntity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RunningDistanceGoalEntity" inverseName="rewardEntity" inverseEntity="RunningDistanceGoalEntity"/>
+        <relationship name="stepsGoalEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StepsGoalEntity" inverseName="rewardEntity" inverseEntity="StepsGoalEntity"/>
+        <relationship name="walkingDistanceGoalEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WalkingDistanceGoalEntity" inverseName="rewardEntity" inverseEntity="WalkingDistanceGoalEntity"/>
+    </entity>
+    <entity name="RunningDistanceGoalEntity" representedClassName="RunningDistanceGoalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="moreInfo" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="rewardEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RewardEntity" inverseName="runningDistanceGoalEntity" inverseEntity="RewardEntity"/>
+    </entity>
+    <entity name="StepsGoalEntity" representedClassName="StepsGoalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="moreInfo" optional="YES" attributeType="String"/>
+        <attribute name="stepCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="rewardEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RewardEntity" inverseName="stepsGoalEntity" inverseEntity="RewardEntity"/>
+    </entity>
+    <entity name="WalkingDistanceGoalEntity" representedClassName="WalkingDistanceGoalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="moreInfo" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="rewardEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RewardEntity" inverseName="walkingDistanceGoalEntity" inverseEntity="RewardEntity"/>
+    </entity>
+    <elements>
+        <element name="RewardEntity" positionX="-36" positionY="27" width="128" height="118"/>
+        <element name="RunningDistanceGoalEntity" positionX="9" positionY="81" width="128" height="118"/>
+        <element name="StepsGoalEntity" positionX="45" positionY="126" width="128" height="118"/>
+        <element name="WalkingDistanceGoalEntity" positionX="9" positionY="90" width="128" height="118"/>
+    </elements>
+</model>

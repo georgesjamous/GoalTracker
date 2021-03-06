@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CoreDataStack">
+   </FileRef>
+   <FileRef
+      location = "group:ApiCall">
+   </FileRef>
+   <FileRef
+      location = "group:UserGoalsService">
+   </FileRef>
+   <FileRef
+      location = "group:HealthDataProvider">
+   </FileRef>
+   <FileRef
+      location = "group:GoalTrackerApp/GoalTracker.xcodeproj">
+   </FileRef>
+</Workspace>
