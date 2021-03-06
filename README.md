@@ -12,21 +12,20 @@ Please go through the points below one by one, top to bottom.
 <br>
 
 Discussion
-
-- [Architecture](https://github.com/georgesjamous/GoalTracker/blob/main/README.ARCHITECTURE.md)
-- [Data Models](https://github.com/georgesjamous/GoalTracker/blob/main/README.MODELS.md)
-- [Schemes](https://github.com/georgesjamous/GoalTracker/blob/main/README.SCHEMES.md)
-- [Dependency Injection](https://github.com/georgesjamous/GoalTracker/blob/main/README.DI.md)
-- [Code Quality](https://github.com/georgesjamous/GoalTracker/blob/main/README.CODE.md)
+- [Architecture](https://github.com/georgesjamous/GoalTracker/blob/master/README.ARCHITECTURE.md)
+- [Data Models](https://github.com/georgesjamous/GoalTracker/blob/master/README.MODELS.md)
+- [Schemes](https://github.com/georgesjamous/GoalTracker/blob/master/README.SCHEMES.md)
+- [Dependency Injection](https://github.com/georgesjamous/GoalTracker/blob/master/README.DI.md)
+- [Code Quality](https://github.com/georgesjamous/GoalTracker/blob/master/README.CODE.md)
 - [Logging] _none implemented_
 
 <br>
 
 Libraries
-- [CoreDataStack](https://github.com/georgesjamous/GoalTracker/blob/main/CoreDataStack)
-- [ApiService](https://github.com/georgesjamous/GoalTracker/blob/main/ApiCall)
-- [HealthDataProviders](https://github.com/georgesjamous/GoalTracker/blob/main/HealthDataProvider)
-- [UserGoalService](https://github.com/georgesjamous/GoalTracker/blob/main/UserGoalsService)
+- [CoreDataStack](https://github.com/georgesjamous/GoalTracker/blob/master/CoreDataStack)
+- [ApiService](https://github.com/georgesjamous/GoalTracker/blob/master/ApiCall)
+- [HealthDataProviders](https://github.com/georgesjamous/GoalTracker/blob/master/HealthDataProvider)
+- [UserGoalService](https://github.com/georgesjamous/GoalTracker/blob/master/UserGoalsService)
 
 <br>
 
