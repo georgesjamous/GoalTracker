@@ -29,13 +29,15 @@ Libraries
 
 <br>
 
-Code Hints
+Code Hints:
+  
   I usually dont advocate extensive commenting. However on this occasion i over explained my intentions in some areas. 
   You can find these areas by searching for the string `Note:` in the code.
 
 <br>
 
 Code Todos: 
+  
   marked with `todo`. Usually we replace those with `#warning` to keep us from forgetting.
   Some people like to use SonarQuebe to break when it finds totdos, i dont like that.
 
