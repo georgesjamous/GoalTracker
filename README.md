@@ -41,7 +41,7 @@ Code Todos:
 
 <br>
 
-Project: 
+You can now launch the Project: 
   Please use the Workspace to launch the application
 
 ---
