@@ -17,6 +17,7 @@ Things I wanted to do but did not have time for:
     8- Use SwiftGen for Localization
     9- Use SwiftLint for linting and sanitization
     10- Moving all logic, each to its own Operation-(NSOperation) instead of inside functions
+    11- UITableViewCell with SwiftUI view optimization by updating the model rather than recreating the view on reuse.
 
 ---
 
